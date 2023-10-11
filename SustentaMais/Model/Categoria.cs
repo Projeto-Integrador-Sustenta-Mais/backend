@@ -13,10 +13,8 @@ namespace SustentaMais.Model
         [StringLength(255)]
         public string Tipo{ get; set; } = string.Empty;
 
-        [Column(TypeName = "BIT")]
-        public Boolean IsValid{ get; set; }
-
-
+        //[Column(TypeName = "BIT")]
+        //public Boolean IsValid{ get; set; }
 
         [InverseProperty("Categoria")]
         public virtual ICollection<Produto>? Produto { get; set; }
