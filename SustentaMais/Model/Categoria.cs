@@ -14,7 +14,7 @@ namespace SustentaMais.Model
         public string Tipo{ get; set; } = string.Empty;
 
         [Column(TypeName = "boolean")]
-        public Boolean IsValid{ get; set; }
+        public Boolean Disponivel{ get; set; }
 
         [InverseProperty("Categoria")]
         public virtual ICollection<Produto>? Produto { get; set; }
