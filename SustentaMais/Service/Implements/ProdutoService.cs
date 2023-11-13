@@ -58,7 +58,7 @@ namespace SustentaMais.Service.Implements
                 if (BuscaCategoria is null)
                     return null;
 
-                produto.Categoria = BuscarCategoria;    
+                produto.Categoria = BuscaCategoria;    
             }
 
             produto.Categoria = produto.Categoria is not null ? _context.Categorias.FirstOrDefault(p => p.Id == produto.Categoria.Id) : null;
