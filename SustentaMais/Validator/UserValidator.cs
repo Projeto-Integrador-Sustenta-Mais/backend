@@ -13,7 +13,7 @@ namespace SustentaMais.Validator
 
             RuleFor(u => u.Usuario)
                     .NotEmpty()
-                    .MaximumLength(50);
+                    .MaximumLength(50)
                     .EmailAddress();
 
             RuleFor(u => u.Senha)
