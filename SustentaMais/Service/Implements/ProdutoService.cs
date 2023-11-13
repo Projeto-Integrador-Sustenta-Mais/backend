@@ -61,7 +61,7 @@ namespace SustentaMais.Service.Implements
                 produto.Categoria = BuscaCategoria;    
             }
 
-            produto.Categoria = produto.Categoria is not null ? _context.Categorias.FirstOrDefault(p => p.Id == produto.Categoria.Id) : null;
+            produto.User = produto.User is not null ? _context.Users.FirstOrDefault(u => u.Id == produto.User.Id) : null;
 
             await _context.Produtos.AddAsync(produto);
             await _context.SaveChangesAsync();
@@ -85,7 +85,7 @@ namespace SustentaMais.Service.Implements
 
             }
 
-            produtos.Categoria = produtos.Categoria is not null ? _context.Categorias.FirstOrDefault(t => t.Id == produtos.Categoria.Id) : null; // verificação
+            produtos.User = produtos.User is not null ? _context.Users.FirstOrDefault(t => t.Id == produtos.User.Id) : null; // verificação
 
             _context.Entry(ProdutoUpdate).State = EntityState.Detached; 
             _context.Entry(produtos).State = EntityState.Modified; 
