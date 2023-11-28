@@ -83,6 +83,8 @@ namespace SustentaMais.Service.Implements
                 if (Buscaproduto is null)
                     return null;
 
+                    produto.Categoria = Buscaproduto;
+
             }
 
             produtos.User = produtos.User is not null ? _context.Users.FirstOrDefault(t => t.Id == produtos.User.Id) : null; // verificação
