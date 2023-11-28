@@ -83,7 +83,7 @@ namespace SustentaMais.Service.Implements
                 if (Buscaproduto is null)
                     return null;
 
-                    produto.Categoria = Buscaproduto;
+                    produtos.Categoria = Buscaproduto;
 
             }
 
