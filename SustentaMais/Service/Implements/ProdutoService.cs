@@ -79,7 +79,7 @@ namespace SustentaMais.Service.Implements
 
             if (produtos.Categoria is not null)
             {
-                var Buscaproduto = await _context.Produtos.FindAsync(produtos.Categoria.Id);
+                var Buscaproduto = await _context.Categoria.FindAsync(produtos.Categoria.Id);
                 if (Buscaproduto is null)
                     return null;
 
