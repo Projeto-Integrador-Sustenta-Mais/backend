@@ -65,7 +65,7 @@ namespace SustentaMais.Service.Implements
                 return null;
 
             if (usuario.Foto is null || usuario.Foto == "")
-                usuario.Foto = "https://img.freepik.com/vetores-premium/icone-de-perfil-de-usuario-em-estilo-plano-ilustracao-em-vetor-avatar-membro-em-fundo-isolado-conceito-de-negocio-de-sinal-de-permissao-humana_157943-15752.jpg";
+                usuario.Foto = "https://i.imgur.com/3Ns9ddk.png";
 
             usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha, workFactor: 10);
 
@@ -84,7 +84,7 @@ namespace SustentaMais.Service.Implements
                 return null;
 
             if (usuario.Foto is null || usuario.Foto == "")
-                usuario.Foto = "https://img.freepik.com/vetores-premium/icone-de-perfil-de-usuario-em-estilo-plano-ilustracao-em-vetor-avatar-membro-em-fundo-isolado-conceito-de-negocio-de-sinal-de-permissao-humana_157943-15752.jpg";
+                usuario.Foto = "https://i.imgur.com/3Ns9ddk.png";
 
             usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha, workFactor: 10);
 
